@@ -1,0 +1,12 @@
+*.sh
+*.el
+
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+TAGS
+
+build/
+reldebug/
+debug/
