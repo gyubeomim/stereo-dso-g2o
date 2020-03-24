@@ -21,8 +21,9 @@ below files are mainly changed from the original stereo-dso codes.
 - `FullSystemOptimization.cpp`: Windowed Optimization.
 - `ImmaturePoint.cpp`: Point Activation, ImmaturePoint Idepth Update.
 
-## Question
-If you have any question about this repository, leave issues.
+## ETC
+- If you have any question about this repository, leave issues.
+- DSO review paper has been uploaded. But it's written in Korean Language. If you have any question while reading review paper, send an email to `gyurse@gmail.com`.
 
 ---
 ﻿# Direct Sparse Odometry with Stereo Cameras 
