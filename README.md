@@ -1,20 +1,19 @@
-﻿# Direct Sparse Odometry with Stereo Cameras 
-
 ---
-Stereo DSO with g2o-based optimization.
+## Stereo DSO with g2o-based optimization.
 
 <img src="pics/stereo-dso-g2o.png"  >
 
 - NOTE that this repository is experimental. I've created this repo for study purpose. 
-- NOTE that g2o-based optimization process are extrememly 
+- NOTE that g2o-based optimization processes I've written are extrememly slow then we can't use it in realtime speed. 
 - `Pose Tracking`, `Windowed Optimization(a.k.a LBA)`, `Point Activation`, `ImmaturePoint Idepth Update` processes are changed to g2o codes.
   - All g2o vertex and edges are implemented in `dso_g2o_edge.h,cpp and dso_g2o_vertex.h,cpp`.
 
-## How to Run
+## How to Run (Ubuntu 16.04 LTS)
 1. It's running only on `RelWithDebInfo` cmake build option. I don't know why. 
 2. `mkdir reldebug && cd reldebug`
 3. `cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo ..`
-4. After finish building, run `./debug_stereo-dso.sh rd 0`
+4. Change path in `debug_stereo-dso.sh` properly to your environment.
+5. Run `./debug_stereo-dso.sh rd 0`
 
 ## Modification log
 below files are mainly changed from the original stereo-dso codes.
@@ -26,9 +25,8 @@ below files are mainly changed from the original stereo-dso codes.
 If you have any question about this repository, leave issues.
 
 ---
-
+﻿# Direct Sparse Odometry with Stereo Cameras 
 Stereo DSO
-
 ---
 Stereo DSO is a real-time stereo SLAM system based on DSO. It is developed by members of Autonomous Driving Group at Horizon Robotics, Inc. It runs on laptops with CPU and provides localization and mapping services for self-driving cars. A demonstration is provides to showcase its capability.
 ### **Authors:** [Jiatian WU](https://github.com/JiatianWu), [Degang YANG](https://github.com/yangdegang), [Qinrui YAN](https://github.com/castoryan), [Shixin LI](https://github.com/MaidouPP)
